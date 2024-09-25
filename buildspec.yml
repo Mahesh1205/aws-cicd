@@ -22,4 +22,6 @@ phases:
 artifacts:
   files:
      - build/**/*
+     - buildspec.yml
+     - appspec.yml
      - package.json
