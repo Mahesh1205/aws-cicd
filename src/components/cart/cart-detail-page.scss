@@ -1,0 +1,28 @@
+@import '../../scss/base/variables.scss';
+.cart-container {
+    margin-top: 190px;
+  }
+    .cart-items {
+      height: 320px;
+      width: 360px;
+     
+    }
+
+    .action-block {
+        background: $white;
+        position: absolute;
+       // bottom: 0;
+        padding: 16px;
+        width: 100%;
+        button {
+          background: $primary-orange;
+          display: block;
+          width: 400px;
+          margin-left: 400px;
+          align-content: center;
+          &.disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+          }
+        }
+      }

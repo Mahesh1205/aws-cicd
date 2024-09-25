@@ -1,0 +1,135 @@
+@import '../../scss/base/variables.scss';
+
+header {
+  background: $white;
+  padding: 30px 32px;
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.033);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  animation: slideUp 300ms linear;
+
+  .container {
+    display: flex;
+    display: -webkit-flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+    justify-content: space-between;
+     & ::before {
+       content: "";
+     }
+  }
+  .container ::before {
+    clear: both;
+  }
+  @media (max-width: 991px) {
+    padding: 16px;
+    .container {
+      padding: 0;
+    }
+  }
+  @media (max-width: 480px) {
+    padding: 8px 12px;
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+// Logo
+.brand .logo {
+  width: 123px;
+  @media (max-width: 480px) {
+    width: 102px;
+    margin: 2px 0;
+  }
+}
+
+
+
+.link{
+  li{
+    margin-left: 10px;
+  }
+  a{
+     color: $primary-green;
+     //font-weight: bolder;
+   }
+  }
+
+  // Cart
+  .btn-cart {
+   background-color:whitesmoke !important;
+  }
+
+
+  .cart-info {
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .cart {
+    display: flex;
+    display: -webkit-flex;
+    // flex-direction: column;
+    //margin-left: 400px;
+    position: relative;
+    z-index: 99;
+    @media (max-width: 991px) {
+      margin-left: 16px;
+    }
+  }
+
+  .user-info {
+    color: $primary-green;
+    font-weight: bolder;
+    padding: 0 20px;
+  }
+  
+  .cart-info table {
+    font-size: 14px;
+    font-weight: bolder;
+    color: $primary-green;
+    text-align: right;
+    tr {
+      padding: 0;
+      margin: 0;
+    }
+    td {
+      padding: 0 4px;
+      line-height: 16px;
+    }
+  }
+  .cart-icon {
+    margin-left: 16px;
+    z-index: 99;
+    position: relative;
+  }
+  .cart-count {
+    @media (min-width: 992px) {
+      display: none;
+    }
+    @media (max-width: 991px) {
+      display: block;
+      position: absolute;
+      background: $primary-orange;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: #fff;
+      width: 24px;
+      border-radius: 50%;
+      top: -6px;
+      right: -9px;
+    }
+  }

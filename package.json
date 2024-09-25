@@ -1,0 +1,40 @@
+{
+  "name": "react_shopping_cart",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.15.3",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.5.10",
+    "react": "^17.0.0",
+    "react-custom-scrollbars": "^4.1.1",
+    "react-dom": "^16.8.3",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.2.1",
+    "react-scripts": "2.1.5",
+    "react-transition-group": "^1.1.2",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "randomstring": "^1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "BUILD_PATH=dist react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
